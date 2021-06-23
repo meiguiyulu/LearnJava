@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace 绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="dao.UserMapper">
+    <!--查询语句-->
+    <select id="getUserList" resultType="pojo.User">
+        select * from mybatis.user
+    </select>
+
+    <select id="getUserLike" resultType="pojo.User">
+        select *
+        from mybatis.user
+        where `name` like #{str};
+    </select>
+
+    <select id="searchUser" parameterType="map">
+        select * from mybatis.user where `id` = #{userid};
+    </select>
+
+    <select id="getUserById" parameterType="int" resultType="pojo.User">
+        select * from mybatis.user where `id` = #{id};
+    </select>
+
+    <!--插入语句-->
+    <insert id="AddUser" parameterType="pojo.User">
+        insert into mybatis.user (`id`, `name`, `pwd`) values (#{id}, #{name}, #{pwd});
+    </insert>
+
+    <insert id="InsertUser" parameterType="map">
+        insert into mybatis.user (`id`, `name`, `pwd`)
+        values (#{user_id}, #{user_name}, #{user_pwd});
+    </insert>
+
+    <!--修改用户-->
+    <update id="UpdateUser" parameterType="pojo.User">
+        update mybatis.user
+        set `name` = #{name}, `pwd` = #{pwd}
+        where `id` = #{id};
+    </update>
+
+    <!--删除用户-->
+    <delete id="deleteUser" parameterType="int">
+        delete
+        from mybatis.user
+        where `id` = #{id};
+    </delete>
+
+
+
+</mapper>
