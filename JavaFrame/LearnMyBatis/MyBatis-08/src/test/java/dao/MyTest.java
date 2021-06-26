@@ -6,10 +6,7 @@ import pojo.Blog;
 import utils.IDutils;
 import utils.MyBatisUtils;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author LYJ
@@ -65,5 +62,41 @@ public class MyTest {
         sqlSession.close();
     }
 
+    @Test
+    public void updateBlogSet(){
+        SqlSession sqlSession = MyBatisUtils.getSqlSession();
+        BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
 
+        Map map = new HashMap();
+        map.put("id", "c6cb9dbdac7345da8743c2d421e398ae");
+        map.put("title", "加油");
+//        map.put("author", "云小杰");
+        int i = mapper.updateBlog(map);
+        if (i>0){
+            System.out.println("更新成功!");
+        }
+
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
+    @Test
+    public void queryBlogForeach(){
+        SqlSession sqlSession = MyBatisUtils.getSqlSession();
+        BlogMapper mapper = sqlSession.getMapper(BlogMapper.class);
+        Map map = new HashMap();
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+
+        map.put("ids", list);
+
+        List<Blog> blogs = mapper.queryBlogForeach(map);
+        for (Blog blog:blogs){
+            System.out.println(blog);
+        }
+        sqlSession.close();
+    }
 }

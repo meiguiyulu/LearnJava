@@ -27,4 +27,18 @@ public interface BlogMapper {
 
     List<Blog> queryBlogChoose(Map map);
 
+    /**
+     * 更新博客
+     * @param map
+     * @return
+     */
+    int updateBlog(Map map);
+
+    /**
+     * 查询id为1、2、3的博客
+     * @param map
+     * @return
+     */
+    List<Blog> queryBlogForeach(Map map);
+
 }
