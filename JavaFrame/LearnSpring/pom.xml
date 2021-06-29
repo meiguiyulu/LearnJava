@@ -13,6 +13,9 @@
         <module>Spring-02</module>
         <module>Spring-03</module>
         <module>Spring-04</module>
+        <module>Spring-05</module>
+        <module>Spring-06</module>
+        <module>Spring-07</module>
     </modules>
 
     <dependencies>
