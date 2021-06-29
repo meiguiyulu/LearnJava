@@ -18,6 +18,8 @@
         <module>Spring-07</module>
         <module>Spring-08</module>
         <module>Spring-09</module>
+        <module>Spring-09-My</module>
+        <module>Spring-10</module>
     </modules>
 
     <dependencies>
@@ -33,5 +35,16 @@
         <maven.compiler.source>14</maven.compiler.source>
         <maven.compiler.target>14</maven.compiler.target>
     </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
 
 </project>

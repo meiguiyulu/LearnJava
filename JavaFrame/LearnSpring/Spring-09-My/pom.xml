@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Spring-09</artifactId>
+    <artifactId>Spring-09-My</artifactId>
 
     <properties>
         <maven.compiler.source>14</maven.compiler.source>
