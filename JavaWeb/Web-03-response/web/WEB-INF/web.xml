@@ -21,5 +21,14 @@
         <servlet-name>image</servlet-name>
         <url-pattern>/img</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>redirect</servlet-name>
+        <servlet-class>servlet.RedirectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>redirect</servlet-name>
+        <url-pattern>/red</url-pattern>
+    </servlet-mapping>
 
 </web-app>

@@ -41,6 +41,7 @@ public class ImageServlet extends HttpServlet {
 
         // 图片写给浏览器
         ImageIO.write(bufferedImage, "jpg",resp.getOutputStream());
+
     }
 
     /**
