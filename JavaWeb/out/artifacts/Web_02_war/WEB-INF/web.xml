@@ -3,6 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    
+    <!--配置一些web应用的初始化参数-->
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:mysql://localhost:3306?</param-value>
+    </context-param>
+    
 
     <servlet>
         <servlet-name>hello</servlet-name>
@@ -21,6 +28,30 @@
     <servlet-mapping>
         <servlet-name>name</servlet-name>
         <url-pattern>/name</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>url</servlet-name>
+        <servlet-class>servlet.ServletDemo03</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>url</servlet-name>
+        <url-pattern>/url</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>demo04</servlet-name>
+        <servlet-class>servlet.ServletDemo04</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>demo04</servlet-name>
+        <url-pattern>/demo04</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>prop</servlet-name>
+        <servlet-class>servlet.PropertiesServer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>prop</servlet-name>
+        <url-pattern>/prop</url-pattern>
     </servlet-mapping>
 
 </web-app>
