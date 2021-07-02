@@ -9,5 +9,18 @@
     
 </web-app>
 ```
+网页输出乱码问题
+```java
+//        resp.setCharacterEncoding("GBK");
+resp.setContentType("text/html");
+resp.setCharacterEncoding("utf-8");
+```
 
+
+`Response` 下载文件
+```java
+//让浏览器支持(Content-Disposition)下载我们需要的东西
+resp.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode(filename, "UTF-8"));
+// 中文文件名使用URLEncoder.encode(filename, "UTF-8")编码，否则可能乱码
+```
 
