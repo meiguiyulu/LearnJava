@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Web-02" />
-        <module name="Web-01-servlet" />
         <module name="Web-04-request" />
+        <module name="Web-05" />
+        <module name="Web-01-servlet" />
       </profile>
     </annotationProcessing>
   </component>

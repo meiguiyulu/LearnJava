@@ -12,6 +12,7 @@
         <module>Web-01-servlet</module>
         <module>Web-02</module>
         <module>Web-04-request</module>
+        <module>Web-05</module>
     </modules>
 
     <properties>
