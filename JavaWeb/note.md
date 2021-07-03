@@ -11,8 +11,8 @@
 ```
 ## 网页输出乱码问题
 ```java
-//        resp.setCharacterEncoding("GBK");
-resp.setContentType("text/html");
+req.setCharacterEncoding("utf-8");
+resp.setContentType("text/html;charset=utf-8");
 resp.setCharacterEncoding("utf-8");
 ```
 

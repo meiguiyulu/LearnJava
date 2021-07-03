@@ -13,6 +13,7 @@
         <module>Web-02</module>
         <module>Web-04-request</module>
         <module>Web-05</module>
+        <module>Web-06-Session</module>
     </modules>
 
     <properties>
