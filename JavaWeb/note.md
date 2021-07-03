@@ -50,4 +50,8 @@ resp.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode
         </dependency>
     </dependencies>
 ```
+`index.jsp`获取当前路径
+```jsp~~~~
+${pageContext.request.contextPath}
+```
 
