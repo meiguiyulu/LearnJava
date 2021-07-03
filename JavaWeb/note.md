@@ -48,7 +48,15 @@ resp.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
-    </dependencies>
+
+        <!-- https://mvnrepository.com/artifact/taglibs/standard -->
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+
+</dependencies>
 ```
 ## `index.jsp`获取当前路径
 ```jsp~~~~

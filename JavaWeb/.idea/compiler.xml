@@ -10,8 +10,12 @@
         <module name="Web-02" />
         <module name="Web-04-request" />
         <module name="Web-05" />
+        <module name="Web-07-JSP" />
         <module name="Web-01-servlet" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Web-07-JSP" target="16" />
+    </bytecodeTargetLevel>
   </component>
 </project>

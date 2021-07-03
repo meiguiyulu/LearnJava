@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Web-03-response/Web-03-response.iml" filepath="$PROJECT_DIR$/Web-03-response/Web-03-response.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Web-07-JSP/Web-07-JSP.iml" filepath="$PROJECT_DIR$/Web-07-JSP/Web-07-JSP.iml" />
     </modules>
   </component>
 </project>
