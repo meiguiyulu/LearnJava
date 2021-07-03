@@ -14,8 +14,5 @@
         <module name="Web-01-servlet" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Web-07-JSP" target="16" />
-    </bytecodeTargetLevel>
   </component>
 </project>
