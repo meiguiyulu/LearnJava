@@ -16,6 +16,7 @@
         <module>Web-06-Session</module>
         <module>Web-07-JSP</module>
         <module>Web-08-JavaBean</module>
+        <module>Web-09-Filter</module>
     </modules>
 
     <properties>
@@ -47,11 +48,36 @@
             <version>1.2</version>
         </dependency>
 
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl-api &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>javax.servlet.jsp.jstl</groupId>-->
+<!--            <artifactId>jstl-api</artifactId>-->
+<!--            <version>1.2</version>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>javax.servlet</groupId>-->
+<!--                    <artifactId>servlet-api</artifactId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <groupId>javax.servlet.jsp</groupId>-->
+<!--                    <artifactId>jsp-api</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
+
         <!-- https://mvnrepository.com/artifact/taglibs/standard -->
         <dependency>
             <groupId>taglibs</groupId>
             <artifactId>standard</artifactId>
             <version>1.1.2</version>
+        </dependency>
+
+        <!--mysql驱动-->
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.16</version>
         </dependency>
 
 
