@@ -10,6 +10,7 @@
         <module name="Web-09-Filter" />
         <module name="Web-02" />
         <module name="Web-04-request" />
+        <module name="Web-09-FilterDemo" />
         <module name="Web-05" />
         <module name="Web-07-JSP" />
         <module name="Web-08-JavaBean" />

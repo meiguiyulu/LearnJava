@@ -60,7 +60,7 @@ resp.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode
 ```
 ## `index.jsp`获取当前路径
 ```jsp~~~~
-${pageContext.request.contextPath}
+<form action="${pageContext.request.contextPath}/login"/>
 ```
 
 

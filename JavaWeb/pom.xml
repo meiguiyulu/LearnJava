@@ -17,6 +17,7 @@
         <module>Web-07-JSP</module>
         <module>Web-08-JavaBean</module>
         <module>Web-09-Filter</module>
+        <module>Web-09-FilterDemo</module>
     </modules>
 
     <properties>
