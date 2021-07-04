@@ -11,6 +11,7 @@
         <module name="Web-04-request" />
         <module name="Web-05" />
         <module name="Web-07-JSP" />
+        <module name="Web-08-JavaBean" />
         <module name="Web-01-servlet" />
       </profile>
     </annotationProcessing>

@@ -15,6 +15,7 @@
         <module>Web-05</module>
         <module>Web-06-Session</module>
         <module>Web-07-JSP</module>
+        <module>Web-08-JavaBean</module>
     </modules>
 
     <properties>
