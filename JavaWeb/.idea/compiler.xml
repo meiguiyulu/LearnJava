@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Web-06-Session" />
+        <module name="Web-10-JDBC" />
         <module name="Web-09-Filter" />
         <module name="Web-02" />
         <module name="Web-04-request" />

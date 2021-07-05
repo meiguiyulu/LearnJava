@@ -18,6 +18,7 @@
         <module>Web-08-JavaBean</module>
         <module>Web-09-Filter</module>
         <module>Web-09-FilterDemo</module>
+        <module>Web-10-JDBC</module>
     </modules>
 
     <properties>
@@ -79,6 +80,19 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.16</version>
+        </dependency>
+        <!--mybatis-->
+        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.7</version>
+        </dependency>
+        <!--junit-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
         </dependency>
 
 
