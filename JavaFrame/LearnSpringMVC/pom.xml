@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>SpringMVC-01-servlet</module>
+        <module>SpringMVC-02-helloMVC</module>
     </modules>
 
     <properties>
