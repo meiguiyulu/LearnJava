@@ -12,6 +12,7 @@
         <module>SpringMVC-01-servlet</module>
         <module>SpringMVC-02-helloMVC</module>
         <module>SpringMVC-03-helloMVC</module>
+        <module>SpringMVC-04-Annotation</module>
     </modules>
 
     <properties>
