@@ -10,6 +10,7 @@
         <module name="SpringMVC-04-Annotation" />
         <module name="SpringMVC-01-servlet" />
         <module name="SpringMVC-02-helloMVC" />
+        <module name="SpringMVC-05-Controller" />
       </profile>
     </annotationProcessing>
   </component>
