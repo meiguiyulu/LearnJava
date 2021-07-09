@@ -110,18 +110,33 @@
 </beans>
 ```
 ## 注解
+
 ```java
-@RequestParam 用在非对象形式传参, 最好使用，例如
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@RequestParam 用在非对象形式传参,最好使用，例如
 @GetMapping("/t1")
-public String test1(@RequestParam("username") String name, Model model){
+public String test1(@RequestParam("username") String name,Model model){
         // 1、接受前端参数
-        System.out.println("接收到前端的参数: " + name);
+        System.out.println("接收到前端的参数: "+name);
         // 2、将接收到的参数传递给前端
-        model.addAttribute("msg", name);
+        model.addAttribute("msg",name);
         // 3、视图跳转
-        return "test";
+        return"test";
         }
+@ResponseBody 不会走视图解析器, 会直接返回一个字符串
 
-        
 
+
+```
+
+## Jackson
+依赖
+```xml
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.12.4</version>
+</dependency>
 ```
