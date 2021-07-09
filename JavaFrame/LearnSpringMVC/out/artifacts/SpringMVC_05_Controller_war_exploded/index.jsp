@@ -11,9 +11,8 @@
     <title>$Title$</title>
   </head>
   <body>
-  <form action="/add" method="post">
-    <input type="text" name="a">
-    <input type="text" name="b">
+  <form action="${pageContext.request.contextPath}/e/t1" method="post">
+    <input type="text" name="name">
     <input type="submit">
   </form>
   </body>
