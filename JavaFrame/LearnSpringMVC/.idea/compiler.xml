@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringMVC-03-helloMVC" />
         <module name="SpringMVC-04-Annotation" />
         <module name="SpringMVC-01-servlet" />
-        <module name="SpringMVC-02-helloMVC" />
-        <module name="SpringMVC-05-Controller" />
         <module name="SpringMVC-06-Json" />
+        <module name="SpringMVC-03-helloMVC" />
+        <module name="SpringMVC-02-helloMVC" />
+        <module name="SpringMVC-07-Ajax" />
+        <module name="SpringMVC-05-Controller" />
       </profile>
     </annotationProcessing>
   </component>
