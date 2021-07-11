@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SpringMVC-04-Annotation" />
         <module name="SpringMVC-01-servlet" />
+        <module name="SpringMVC-09-File" />
         <module name="SpringMVC-06-Json" />
         <module name="SpringMVC-03-helloMVC" />
         <module name="SpringMVC-02-helloMVC" />

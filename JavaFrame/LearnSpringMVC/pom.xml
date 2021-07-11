@@ -17,6 +17,7 @@
         <module>SpringMVC-06-Json</module>
         <module>SpringMVC-07-Ajax</module>
         <module>SpringMVC-08-Intercepter</module>
+        <module>SpringMVC-09-File</module>
     </modules>
 
     <properties>
@@ -37,13 +38,13 @@
             <artifactId>spring-webmvc</artifactId>
             <version>5.3.8</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
-            <scope>provided</scope>
-        </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/javax.servlet/servlet-api &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>javax.servlet</groupId>-->
+<!--            <artifactId>servlet-api</artifactId>-->
+<!--            <version>2.5</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
         <!-- https://mvnrepository.com/artifact/javax.servlet.jsp/jsp-api -->
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
