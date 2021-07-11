@@ -12,6 +12,7 @@
         <module name="SpringMVC-03-helloMVC" />
         <module name="SpringMVC-02-helloMVC" />
         <module name="SpringMVC-07-Ajax" />
+        <module name="SpringMVC-08-Intercepter" />
         <module name="SpringMVC-05-Controller" />
       </profile>
     </annotationProcessing>

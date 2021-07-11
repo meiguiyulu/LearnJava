@@ -16,6 +16,7 @@
         <module>SpringMVC-05-Controller</module>
         <module>SpringMVC-06-Json</module>
         <module>SpringMVC-07-Ajax</module>
+        <module>SpringMVC-08-Intercepter</module>
     </modules>
 
     <properties>
