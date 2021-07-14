@@ -9,6 +9,7 @@
         <module name="Web-06-Session" />
         <module name="Web-10-JDBC" />
         <module name="Web-09-Filter" />
+        <module name="Web-12-Mail" />
         <module name="Web-02" />
         <module name="Web-04-request" />
         <module name="Web-09-FilterDemo" />
