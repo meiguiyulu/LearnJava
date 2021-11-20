@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/JavaWeb/pom.xml" />
+        <option value="$PROJECT_DIR$/LearnJUC/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaFrame/LearnSpring/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaFrame/LearnMyBatis/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaFrame/LearnSpringMVC/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaFrame/LearnSpringBoot/HelloWorld/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaFrame/LearnSpringCloud/pom.xml" />
+        <option value="$PROJECT_DIR$/LearnRedis/redis-01-jedis/pom.xml" />
+        <option value="$PROJECT_DIR$/LearnRedis/redis-02-springboot/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="16" project-jdk-type="JavaSDK" />
+</project>

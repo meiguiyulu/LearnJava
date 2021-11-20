@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpringBoot/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpringBoot/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/JavaWeb.iml" filepath="$PROJECT_DIR$/JavaWeb/JavaWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LearnJUC/LearnJUC.iml" filepath="$PROJECT_DIR$/LearnJUC/LearnJUC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/LearnJava.iml" filepath="$PROJECT_DIR$/.idea/LearnJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnMyBatis/LearnMyBatis.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnMyBatis/LearnMyBatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpring/LearnSpring.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpring/LearnSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpringCloud/LearnSpringCloud.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpringCloud/LearnSpringCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpringMVC/LearnSpringMVC.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpringMVC/LearnSpringMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-01/MyBatis-01.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-01/MyBatis-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-02/MyBatis-02.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-02/MyBatis-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-03/MyBatis-03.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-03/MyBatis-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-04/MyBatis-04.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-04/MyBatis-04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-05/MyBatis-05.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-05/MyBatis-05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-06/MyBatis-06.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-06/MyBatis-06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-07/MyBatis-07.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-07/MyBatis-07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-08/MyBatis-08.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-08/MyBatis-08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-09/MyBatis-09.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnMyBatis/MyBatis-09/MyBatis-09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-01/Spring-01.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-01/Spring-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-02/Spring-02.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-02/Spring-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-03/Spring-03.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-03/Spring-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-04/Spring-04.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-04/Spring-04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-05/Spring-05.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-05/Spring-05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-06/Spring-06.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-06/Spring-06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-07/Spring-07.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-07/Spring-07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-08/Spring-08.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-08/Spring-08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-09/Spring-09.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-09/Spring-09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-09-My/Spring-09-My.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-09-My/Spring-09-My.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-10/Spring-10.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-10/Spring-10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-11/Spring-11.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpring/Spring-11/Spring-11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpringCloud/SpringCloud-consumer-dept-8000/SpringCloud-consumer-dept-8000.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpringCloud/SpringCloud-consumer-dept-8000/SpringCloud-consumer-dept-8000.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpringCloud/SpringClound-api/SpringClound-api.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpringCloud/SpringClound-api/SpringClound-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-01-servlet/SpringMVC-01-servlet.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-01-servlet/SpringMVC-01-servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-02-helloMVC/SpringMVC-02-helloMVC.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-02-helloMVC/SpringMVC-02-helloMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-03-helloMVC/SpringMVC-03-helloMVC.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-03-helloMVC/SpringMVC-03-helloMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-04-Annotation/SpringMVC-04-Annotation.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-04-Annotation/SpringMVC-04-Annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-05-Controller/SpringMVC-05-Controller.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-05-Controller/SpringMVC-05-Controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-06-Json/SpringMVC-06-Json.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-06-Json/SpringMVC-06-Json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-07-Ajax/SpringMVC-07-Ajax.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-07-Ajax/SpringMVC-07-Ajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-08-Intercepter/SpringMVC-08-Intercepter.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-08-Intercepter/SpringMVC-08-Intercepter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-09-File/SpringMVC-09-File.iml" filepath="$PROJECT_DIR$/JavaFrame/LearnSpringMVC/SpringMVC-09-File/SpringMVC-09-File.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/Web-01-servlet/Web-01-servlet.iml" filepath="$PROJECT_DIR$/JavaWeb/Web-01-servlet/Web-01-servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/Web-02/Web-02.iml" filepath="$PROJECT_DIR$/JavaWeb/Web-02/Web-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/Web-04-request/Web-04-request.iml" filepath="$PROJECT_DIR$/JavaWeb/Web-04-request/Web-04-request.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/Web-05/Web-05.iml" filepath="$PROJECT_DIR$/JavaWeb/Web-05/Web-05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/Web-06-Session/Web-06-Session.iml" filepath="$PROJECT_DIR$/JavaWeb/Web-06-Session/Web-06-Session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/Web-07-JSP/Web-07-JSP.iml" filepath="$PROJECT_DIR$/JavaWeb/Web-07-JSP/Web-07-JSP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/Web-08-JavaBean/Web-08-JavaBean.iml" filepath="$PROJECT_DIR$/JavaWeb/Web-08-JavaBean/Web-08-JavaBean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/Web-09-Filter/Web-09-Filter.iml" filepath="$PROJECT_DIR$/JavaWeb/Web-09-Filter/Web-09-Filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/Web-09-FilterDemo/Web-09-FilterDemo.iml" filepath="$PROJECT_DIR$/JavaWeb/Web-09-FilterDemo/Web-09-FilterDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/Web-10-JDBC/Web-10-JDBC.iml" filepath="$PROJECT_DIR$/JavaWeb/Web-10-JDBC/Web-10-JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/Web-12-Mail/Web-12-Mail.iml" filepath="$PROJECT_DIR$/JavaWeb/Web-12-Mail/Web-12-Mail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LearnRedis/redis-01-jedis/redis-01-jedis.iml" filepath="$PROJECT_DIR$/LearnRedis/redis-01-jedis/redis-01-jedis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LearnRedis/redis-02-springboot/redis-02-springboot.iml" filepath="$PROJECT_DIR$/LearnRedis/redis-02-springboot/redis-02-springboot.iml" />
+    </modules>
+  </component>
+</project>
