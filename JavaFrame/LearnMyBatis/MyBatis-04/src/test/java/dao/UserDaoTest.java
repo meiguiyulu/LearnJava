@@ -21,7 +21,7 @@ public class UserDaoTest {
     static Logger logger = Logger.getLogger(UserDaoTest.class);
 
     @Test
-    public void getUserById(){
+    public void getUserById() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         User user = mapper.getUserById(1);
@@ -31,7 +31,7 @@ public class UserDaoTest {
     }
 
     @Test
-    public void testlog4j(){
+    public void testlog4j() {
         logger.info("info:进入了testlog4j");
 
         logger.debug("debug:进入了testlog4j");
@@ -40,14 +40,14 @@ public class UserDaoTest {
     }
 
     @Test
-    public void getUserByLimit(){
+    public void getUserByLimit() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         Map<String, Integer> map = new HashMap<>();
         map.put("startIndex", 3);
         map.put("pageSize", 2);
         List<User> users = mapper.getUserByLimit(map);
-        for (User user: users){
+        for (User user : users) {
             System.out.println(user);
         }
 
@@ -55,7 +55,7 @@ public class UserDaoTest {
     }
 
     @Test
-    public void getUserByRowBounds(){
+    public void getUserByRowBounds() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
 
         // RowBounds实现分页
@@ -63,7 +63,7 @@ public class UserDaoTest {
 
         // Java层面实现分页
         List<User> users = sqlSession.selectList("dao.UserMapper.getUserByRowBounds", null, rowBounds);
-        for (User user: users){
+        for (User user : users) {
             System.out.println(user);
         }
 

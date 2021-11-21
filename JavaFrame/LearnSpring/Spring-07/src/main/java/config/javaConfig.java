@@ -23,10 +23,11 @@ public class javaConfig {
      * 注册一个bean，相当于之前的bean标签
      * 这个方法的名字，相当于bean标签的id属性
      * 这个方法返回值，相当于bean标签的class属性
+     *
      * @return
      */
     @Bean
-    public User getUser(){
+    public User getUser() {
         // 返回要注入到bean的对象
         return new User();
     }

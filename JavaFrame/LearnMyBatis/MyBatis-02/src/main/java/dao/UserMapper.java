@@ -16,6 +16,7 @@ public interface UserMapper {
 
     /**
      * 查询全部用户
+     *
      * @return
      */
     List<User> getUserList();
@@ -28,6 +29,7 @@ public interface UserMapper {
 
     /**
      * 插入用户
+     *
      * @param user
      * @return
      */
@@ -35,6 +37,7 @@ public interface UserMapper {
 
     /**
      * 修改用户
+     *
      * @param user
      * @return
      */
@@ -42,6 +45,7 @@ public interface UserMapper {
 
     /**
      * 删除用户
+     *
      * @param id
      * @return
      */

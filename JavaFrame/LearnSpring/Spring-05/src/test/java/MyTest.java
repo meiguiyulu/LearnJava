@@ -9,7 +9,7 @@ import pojo.Person;
  */
 public class MyTest {
     @Test
-    public void test(){
+    public void test() {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         Person person = context.getBean("person", Person.class);
         person.getCat().bark();

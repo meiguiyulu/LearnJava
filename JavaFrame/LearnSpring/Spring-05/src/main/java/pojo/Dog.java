@@ -6,7 +6,7 @@ package pojo;
  */
 public class Dog {
 
-    public void bark(){
+    public void bark() {
         System.out.println("汪汪汪！");
     }
 }

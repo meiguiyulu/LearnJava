@@ -6,11 +6,11 @@
 <!--configuration核心配置文件-->
 <configuration>
 
-<!--    引入外部配置文件-->
+    <!--    引入外部配置文件-->
     <properties resource="db.properties">
     </properties>
 
-<!--    可以给实体类起别名-->
+    <!--    可以给实体类起别名-->
     <typeAliases>
         <package name="pojo"/>
     </typeAliases>
@@ -30,7 +30,8 @@
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/mybatis?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
+                <property name="url"
+                          value="jdbc:mysql://localhost:3306/mybatis?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
                 <property name="username" value="root"/>
                 <property name="password" value="7012+2"/>
             </dataSource>
@@ -38,11 +39,11 @@
 
     </environments>
 
-<!--    每一个Mapper.xml都需要在MyBatis核心配置文件中注册!-->
+    <!--    每一个Mapper.xml都需要在MyBatis核心配置文件中注册!-->
     <mappers>
         <mapper resource="dao/UserMapper.xml"/>
-<!--        <mapper class="dao.UserMapper"></mapper>-->
-<!--        <package name="dao"/>-->
+        <!--        <mapper class="dao.UserMapper"></mapper>-->
+        <!--        <package name="dao"/>-->
     </mappers>
-    
+
 </configuration>

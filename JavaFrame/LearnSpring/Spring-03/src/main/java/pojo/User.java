@@ -7,10 +7,10 @@ package pojo;
 public class User {
     private String name;
 
-//    public User(){
+    //    public User(){
 //        System.out.println("User类的无参构造!");
 //    }
-    public User(String name){
+    public User(String name) {
         this.name = name;
         System.out.println("User类的有参构造!");
     }
@@ -22,7 +22,8 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
-    public void showName(){
+
+    public void showName() {
         System.out.println("name\t=\t" + name);
     }
 }

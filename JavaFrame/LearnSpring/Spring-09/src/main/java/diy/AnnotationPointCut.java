@@ -18,12 +18,12 @@ import org.aspectj.lang.annotation.Before;
 public class AnnotationPointCut {
 
     @Before("execution(* service.UserServiceImpl.*(..))")
-    public void before(){
+    public void before() {
         System.out.println("=============方法执行前===============");
     }
 
     @After("execution(* service.UserServiceImpl.*(..))")
-    public void after(){
+    public void after() {
         System.out.println("=============方法执行后===============");
     }
 

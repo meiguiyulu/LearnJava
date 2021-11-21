@@ -4,7 +4,7 @@ package client.demo02;
  * @author LYJ
  * @create 2021-06-29 14:26
  */
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
     @Override
     public void add() {
         System.out.println("增加了一个用户！");

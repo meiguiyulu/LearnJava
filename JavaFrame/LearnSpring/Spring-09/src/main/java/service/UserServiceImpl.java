@@ -4,7 +4,7 @@ package service;
  * @author LYJ
  * @create 2021-06-29 17:13
  */
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
     @Override
     public void add() {
         System.out.println("添加用户");

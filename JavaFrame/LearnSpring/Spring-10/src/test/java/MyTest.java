@@ -15,13 +15,14 @@ import java.util.List;
 public class MyTest {
     public static void main(String[] args) {
     }
+
     @Test
-    public void selectUsers(){
+    public void selectUsers() {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserMapper useMapper = context.getBean("userMapper2", UserMapper.class);
         List<User> users = useMapper.queryUsers();
 
-        for (User user:users){
+        for (User user : users) {
             System.out.println(user);
         }
     }

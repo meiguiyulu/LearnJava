@@ -9,7 +9,7 @@
         insert into mybatis.blog(`id`, `title`, `author`, `create_time`, `views`)
         values (#{id}, #{title}, #{author}, #{createTime}, #{views})
     </select>
-    
+
     <sql id="if-title-author">
         <if test="title != null">
             and `title` = #{title}
@@ -18,7 +18,7 @@
             and `author` = #{author}
         </if>
     </sql>
-    
+
     <select id="queryBlog" parameterType="map" resultType="Blog">
         select * from mybatis.blog
         <where>
@@ -36,9 +36,9 @@
                 <when test="author != null">
                     and `author` = #{author}
                 </when>
-<!--                <otherwise>-->
-<!--                    -->
-<!--                </otherwise>-->
+                <!--                <otherwise>-->
+                <!--                    -->
+                <!--                </otherwise>-->
             </choose>
         </where>
     </select>

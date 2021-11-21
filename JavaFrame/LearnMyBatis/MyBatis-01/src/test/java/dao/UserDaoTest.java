@@ -16,11 +16,11 @@ import java.util.Map;
 public class UserDaoTest {
 
     @Test
-    public void getUserlike(){
+    public void getUserlike() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         List<User> users = mapper.getUserLike("%杰%");
-        for (User user:users){
+        for (User user : users) {
             System.out.println(user);
             System.out.println("==============================");
         }
@@ -30,7 +30,7 @@ public class UserDaoTest {
 
 
     @Test
-    public void test(){
+    public void test() {
         // 第一步：获得sqlSession对象
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         // 方式一: getMapper
@@ -39,7 +39,7 @@ public class UserDaoTest {
 
         // 方式二：
 //        List<User> userList = sqlSession.selectList("dao.UserMapper.getUserList");
-        for (User user: userList){
+        for (User user : userList) {
             System.out.println(user);
         }
         // 关闭sqlSession
@@ -47,7 +47,7 @@ public class UserDaoTest {
     }
 
     @Test
-    public void getUserById(){
+    public void getUserById() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
 
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
@@ -58,7 +58,7 @@ public class UserDaoTest {
     }
 
     @Test
-    public void searchUser(){
+    public void searchUser() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
@@ -76,12 +76,12 @@ public class UserDaoTest {
      * 增删改需要提交事务
      */
     @Test
-    public void addUser(){
+    public void addUser() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
 
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         int num = mapper.AddUser(new User(5, "苍蓝", "222222"));
-        if (num>0){
+        if (num > 0) {
             System.out.println("插入成功");
         }
         // 提交事务
@@ -92,7 +92,7 @@ public class UserDaoTest {
 
 
     @Test
-    public void InsertUser(){
+    public void InsertUser() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
@@ -111,12 +111,12 @@ public class UserDaoTest {
      * 修改用户
      */
     @Test
-    public void updateUser(){
+    public void updateUser() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
         int num = mapper.UpdateUser(new User(1, "撷思", "xiesi"));
-        if (num>0){
+        if (num > 0) {
             System.out.println("修改成功");
         }
         sqlSession.commit();
@@ -127,12 +127,12 @@ public class UserDaoTest {
      * 删除用户
      */
     @Test
-    public void  deleteUser(){
+    public void deleteUser() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
         int num = mapper.deleteUser(4);
-        if (num>0){
+        if (num > 0) {
             System.out.println("删除成功");
         }
         sqlSession.commit();
