@@ -19,6 +19,8 @@ public class User {
     private String email;
     @Version // 乐观锁Version注解
     private Integer version;
+//    @TableLogic // 逻辑删除
+    private Integer isDeleted;
 
 
     @TableField(fill = FieldFill.INSERT)

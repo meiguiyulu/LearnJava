@@ -120,4 +120,12 @@ class LearnMyBatisPlusApplicationTests {
         userMapper.deleteByMap(map);
     }
 
+    // 测试逻辑删除
+    @Test
+    public void testLogicDelete(){
+        userMapper.deleteById(1463109181069959171L);
+        User user = userMapper.selectById(1463109181069959171L);
+        System.out.println(user);
+    }
+
 }
