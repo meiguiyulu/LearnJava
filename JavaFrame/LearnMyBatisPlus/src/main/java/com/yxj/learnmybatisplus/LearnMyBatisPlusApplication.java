@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
-@MapperScan("com.yxj.learnmybatisplus.mapper")  // 扫描mapper文件夹
+
 @SpringBootApplication
 public class LearnMyBatisPlusApplication {
 
