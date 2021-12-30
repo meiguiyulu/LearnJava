@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <select v-model="yunjie">
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+    </select>
+    <span>{{yunjie}}</span>
+</div>
+
+<!--1、导入vue.js-->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: "#app",
+        data: {
+            yunjie: ""
+        },
+    });
+</script>
+</body>
+</html>

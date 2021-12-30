@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <button v-on:click="sayHello">Click me!</button>
+</div>
+
+<!--1、导入vue.js-->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: "#app",
+        data: {
+            message: "小杰，你好呀"
+        },
+        methods: {
+            // Vue中的事件必须写在methods中
+            sayHello: function () {
+                alert(this.message);
+            }
+        }
+    });
+</script>
+</body>
+</html>
