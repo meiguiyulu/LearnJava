@@ -11,13 +11,14 @@
         <module name="Spring-06" />
         <module name="Spring-07" />
         <module name="Spring-11" />
+        <module name="NewLearn" />
         <module name="Spring-01" />
         <module name="Spring-02" />
         <module name="Spring-03" />
         <module name="Spring-09-My" />
-        <module name="Spring-10" />
         <module name="Spring-08" />
         <module name="Spring-09" />
+        <module name="Spring-10" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

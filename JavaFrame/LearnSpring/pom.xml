@@ -21,6 +21,7 @@
         <module>Spring-09-My</module>
         <module>Spring-10</module>
         <module>Spring-11</module>
+        <module>NewLearn</module>
     </modules>
 
     <dependencies>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <test1 v-for="item in items" v-bind:yun="item"></test1>
+</div>
+
+<!--1、导入vue.js-->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script>
+
+    // 定义一个Vue组件component
+    Vue.component("test1", {
+        props: ["yun"],
+        template: '<li>{{yun}}</li>',
+    });
+
+    let vm = new Vue({
+        el: "#app",
+        data: {
+            items: ["Java", "Python", "C#"],
+        }
+    });
+</script>
+</body>
+</html>
