@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4020d832-8de6-4c14-8fc9-6c19df8221b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/src/main/java/com/meiguiyulu/controller/helloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-05-security/src/main/resources/static/css/qinstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-05-security/src/main/resources/static/js/jquery-3.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-05-security/src/main/resources/static/js/semantic.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/views/level1/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/views/level1/2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/views/level1/3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/views/level2/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/views/level2/2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/views/level2/3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/views/level3/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/views/level3/2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/views/level3/3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/views/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloWorld/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloWorld/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloWorld/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloWorld/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloWorld/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloWorld/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloWorld/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloWorld/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloWorld/src/main/java/com/example/helloworld/HelloWorldApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloWorld/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloWorld/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloWorld/src/test/java/com/example/helloworld/HelloWorldApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1vNncbPRGlHfBarSYYX5dAKjV7v" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.Springboot02ConfigApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot02ConfigApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-02-config" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.meiguiyulu.springboot02config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.meiguiyulu.springboot02config" />
+      <option name="MAIN_CLASS_NAME" value="com.meiguiyulu.springboot02config.Springboot02ConfigApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Springboot02ConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-02-config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.meiguiyulu.springboot02config.Springboot02ConfigApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Springboot02ConfigApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4020d832-8de6-4c14-8fc9-6c19df8221b1" name="Default Changelist" comment="" />
+      <created>1626411496792</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626411496792</updated>
+      <workItem from="1626411498177" duration="13697000" />
+      <workItem from="1626772260246" duration="681000" />
+      <workItem from="1626773061160" duration="26000" />
+      <workItem from="1626773121230" duration="19000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
