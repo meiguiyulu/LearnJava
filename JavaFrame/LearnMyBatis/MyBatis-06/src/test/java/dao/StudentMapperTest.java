@@ -18,11 +18,11 @@ public class StudentMapperTest {
 
 
     @Test
-    public void getStudent(){
+    public void getStudent() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         StudentMapper mapper = sqlSession.getMapper(StudentMapper.class);
         List<Student> students = mapper.getStudent2();
-        for (Student student: students){
+        for (Student student : students) {
             System.out.println(student);
         }
 

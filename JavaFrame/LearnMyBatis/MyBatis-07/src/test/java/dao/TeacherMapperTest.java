@@ -15,12 +15,13 @@ public class TeacherMapperTest {
     public static void main(String[] args) {
 
     }
+
     @Test
-    public void getTeachers(){
+    public void getTeachers() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         TeacherMapper mapper = sqlSession.getMapper(TeacherMapper.class);
         List<Teacher> teachers = mapper.getTeachers();
-        for (Teacher teacher:teachers){
+        for (Teacher teacher : teachers) {
             System.out.println(teacher);
         }
 
@@ -28,7 +29,7 @@ public class TeacherMapperTest {
     }
 
     @Test
-    public void getTeacher(){
+    public void getTeacher() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         TeacherMapper mapper = sqlSession.getMapper(TeacherMapper.class);
         Teacher teacher = mapper.getTeacher2(1);

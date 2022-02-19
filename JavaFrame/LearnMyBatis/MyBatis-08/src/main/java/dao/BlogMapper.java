@@ -13,6 +13,7 @@ public interface BlogMapper {
 
     /**
      * 插入数据
+     *
      * @param blog
      * @return
      */
@@ -20,6 +21,7 @@ public interface BlogMapper {
 
     /**
      * 查询博客
+     *
      * @param map
      * @return
      */
@@ -29,6 +31,7 @@ public interface BlogMapper {
 
     /**
      * 更新博客
+     *
      * @param map
      * @return
      */
@@ -36,6 +39,7 @@ public interface BlogMapper {
 
     /**
      * 查询id为1、2、3的博客
+     *
      * @param map
      * @return
      */

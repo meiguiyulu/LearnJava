@@ -9,7 +9,7 @@ import java.util.List;
  * @author LYJ
  * @create 2021-06-29 21:39
  */
-public class UserMapperImpl implements UserMapper{
+public class UserMapperImpl implements UserMapper {
 
     // 我们的所以操作原先都使用sqlSession来执行，现在都是用SqlSessionTemplate
     private SqlSessionTemplate sqlSession;

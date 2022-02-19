@@ -16,11 +16,11 @@ import java.util.Map;
 public class UserDaoTest {
 
     @Test
-    public void getUserLike(){
+    public void getUserLike() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         List<User> users = mapper.getUserLike("%杰%");
-        for (User user:users){
+        for (User user : users) {
             System.out.println(user);
             System.out.println("=========================");
         }

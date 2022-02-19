@@ -18,6 +18,7 @@ public interface UserMapper {
 
     /**
      * 分页
+     *
      * @param map
      * @return
      */
@@ -25,6 +26,7 @@ public interface UserMapper {
 
     /**
      * RowBound分页
+     *
      * @return
      */
     List<User> getUserByRowBounds();

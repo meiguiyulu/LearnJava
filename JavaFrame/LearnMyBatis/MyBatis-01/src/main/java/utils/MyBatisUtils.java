@@ -33,9 +33,10 @@ public class MyBatisUtils {
     /**
      * 既然有了 SqlSessionFactory，顾名思义，我们可以从中获得 SqlSession 的实例。
      * SqlSession 提供了在数据库执行 SQL 命令所需的所有方法。
+     *
      * @return
      */
-    public static SqlSession getSqlSession(){
+    public static SqlSession getSqlSession() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         return sqlSession;
     }

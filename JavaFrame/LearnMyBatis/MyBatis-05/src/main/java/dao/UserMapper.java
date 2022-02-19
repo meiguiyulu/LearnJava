@@ -13,6 +13,7 @@ import java.util.Map;
 public interface UserMapper {
     /**
      * 得到全部用户
+     *
      * @return
      */
     @Select("select * from user")
@@ -21,6 +22,7 @@ public interface UserMapper {
     /**
      * 查找指定用户
      * 方法若存在多个参数，则每个参数之前都必须加上@Param注解，引用类型不用
+     *
      * @param id
      * @return
      */
@@ -29,6 +31,7 @@ public interface UserMapper {
 
     /**
      * 插入用户
+     *
      * @param user
      * @return
      */
@@ -37,6 +40,7 @@ public interface UserMapper {
 
     /**
      * 修改用户信息
+     *
      * @param user
      * @return
      */
@@ -45,6 +49,7 @@ public interface UserMapper {
 
     /**
      * 删除用户
+     *
      * @param id
      * @return
      */

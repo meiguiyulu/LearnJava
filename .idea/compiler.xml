@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Spring-04" />
+        <module name="Web-10-JDBC" />
+        <module name="Spring-05" />
+        <module name="Spring-06" />
+        <module name="Spring-07" />
+        <module name="Spring-01" />
+        <module name="Spring-02" />
+        <module name="Spring-03" />
+        <module name="Web-02" />
+        <module name="SpringMVC-03-helloMVC" />
+        <module name="redis-02-springboot" />
+        <module name="Web-09-FilterDemo" />
+        <module name="Web-05" />
+        <module name="Spring-08" />
+        <module name="SpringMVC-07-Ajax" />
+        <module name="Spring-09" />
+        <module name="Web-08-JavaBean" />
+        <module name="Web-01-servlet" />
+        <module name="MyBatis-01" />
+        <module name="MyBatis-02" />
+        <module name="SpringMVC-09-File" />
+        <module name="MyBatis-03" />
+        <module name="Web-12-Mail" />
+        <module name="MyBatis-04" />
+        <module name="SpringCloud-consumer-dept-8000" />
+        <module name="MyBatis-05" />
+        <module name="LearnJUC" />
+        <module name="Spring-10" />
+        <module name="SpringMVC-04-Annotation" />
+        <module name="Spring-11" />
+        <module name="SpringMVC-01-servlet" />
+        <module name="Spring-09-My" />
+        <module name="MyBatis-06" />
+        <module name="MyBatis-07" />
+        <module name="Web-04-request" />
+        <module name="MyBatis-08" />
+        <module name="MyBatis-09" />
+        <module name="HelloWorld" />
+        <module name="Web-06-Session" />
+        <module name="Web-09-Filter" />
+        <module name="SpringMVC-06-Json" />
+        <module name="Web-07-JSP" />
+        <module name="SpringMVC-02-helloMVC" />
+        <module name="SpringClound-api" />
+        <module name="redis-01-jedis" />
+        <module name="SpringMVC-08-Intercepter" />
+        <module name="SpringMVC-05-Controller" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="HelloWorld" target="1.8" />
+      <module name="JavaWeb" target="14" />
+      <module name="LearnJUC" target="14" />
+      <module name="LearnMyBatis" target="14" />
+      <module name="LearnSpring" target="14" />
+      <module name="LearnSpringCloud" target="16" />
+      <module name="LearnSpringMVC" target="14" />
+      <module name="MyBatis-01" target="14" />
+      <module name="MyBatis-02" target="14" />
+      <module name="MyBatis-03" target="14" />
+      <module name="MyBatis-04" target="14" />
+      <module name="MyBatis-05" target="14" />
+      <module name="MyBatis-06" target="14" />
+      <module name="MyBatis-07" target="14" />
+      <module name="MyBatis-08" target="14" />
+      <module name="MyBatis-09" target="14" />
+      <module name="redis-01-jedis" target="16" />
+      <module name="redis-02-springboot" target="11" />
+      <module name="Spring-01" target="14" />
+      <module name="Spring-02" target="14" />
+      <module name="Spring-03" target="14" />
+      <module name="Spring-04" target="14" />
+      <module name="Spring-05" target="14" />
+      <module name="Spring-06" target="14" />
+      <module name="Spring-07" target="14" />
+      <module name="Spring-08" target="14" />
+      <module name="Spring-09" target="14" />
+      <module name="Spring-09-My" target="14" />
+      <module name="Spring-10" target="14" />
+      <module name="Spring-11" target="14" />
+      <module name="SpringCloud-consumer-dept-8000" target="16" />
+      <module name="SpringClound-api" target="16" />
+      <module name="SpringMVC-01-servlet" target="14" />
+      <module name="SpringMVC-02-helloMVC" target="16" />
+      <module name="SpringMVC-03-helloMVC" target="16" />
+      <module name="SpringMVC-04-Annotation" target="14" />
+      <module name="SpringMVC-05-Controller" target="14" />
+      <module name="SpringMVC-06-Json" target="16" />
+      <module name="SpringMVC-07-Ajax" target="16" />
+      <module name="SpringMVC-08-Intercepter" target="16" />
+      <module name="SpringMVC-09-File" target="16" />
+      <module name="Web-01-servlet" target="14" />
+      <module name="Web-02" target="16" />
+      <module name="Web-04-request" target="16" />
+      <module name="Web-05" target="16" />
+      <module name="Web-06-Session" target="16" />
+      <module name="Web-07-JSP" target="16" />
+      <module name="Web-08-JavaBean" target="16" />
+      <module name="Web-09-Filter" target="16" />
+      <module name="Web-09-FilterDemo" target="16" />
+      <module name="Web-10-JDBC" target="16" />
+      <module name="Web-12-Mail" target="16" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="redis-02-springboot" options="-parameters" />
+    </option>
+  </component>
+</project>

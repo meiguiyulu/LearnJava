@@ -6,11 +6,11 @@ package diy;
  */
 public class DiyPointCut {
 
-    public void before(){
+    public void before() {
         System.out.println("小狗还没开始叫~");
     }
 
-    public void after(){
+    public void after() {
         System.out.println("小狗不叫了~");
     }
 

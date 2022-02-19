@@ -8,7 +8,7 @@ package client.demo01;
 /**
  * 房东
  */
-public class Host implements Rent{
+public class Host implements Rent {
 
     @Override
     public void rent() {

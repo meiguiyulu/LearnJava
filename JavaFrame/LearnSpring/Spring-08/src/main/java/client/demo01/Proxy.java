@@ -4,7 +4,7 @@ package client.demo01;
  * @author LYJ
  * @create 2021-06-29 13:02
  */
-public class Proxy implements Rent{
+public class Proxy implements Rent {
 
     private Host host;
 
@@ -22,22 +22,25 @@ public class Proxy implements Rent{
         heTong();
         fare();
     }
+
     /**
      * 看房
      */
-    public void seeHouse(){
+    public void seeHouse() {
         System.out.println("中介带你看房!");
     }
+
     /**
      * 收中介费
      */
-    public void fare(){
+    public void fare() {
         System.out.println("收中介费");
     }
+
     /**
      * 租赁合同
      */
-    public void heTong(){
+    public void heTong() {
         System.out.println("租赁合同");
     }
 }

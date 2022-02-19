@@ -15,7 +15,7 @@ public class MyTest {
         UserMapper useMapper = context.getBean("userMapper", UserMapper.class);
         List<User> users = useMapper.queryUsers();
 
-        for (User user: users){
+        for (User user : users) {
             System.out.println(user);
         }
     }

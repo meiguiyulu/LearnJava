@@ -14,7 +14,7 @@ import java.util.List;
 public class UserDaoTest {
 
     @Test
-    public void getUserLike(){
+    public void getUserLike() {
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         User user = mapper.getUserById(1);

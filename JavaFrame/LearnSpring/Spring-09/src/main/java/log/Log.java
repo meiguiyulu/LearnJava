@@ -11,10 +11,9 @@ import java.lang.reflect.Method;
 public class Log implements MethodBeforeAdvice {
 
     /**
-     *
-     * @param method    要执行的目标对象的方法
-     * @param objects   参数
-     * @param o         目标对象
+     * @param method  要执行的目标对象的方法
+     * @param objects 参数
+     * @param o       目标对象
      */
     @Override
     public void before(Method method, Object[] objects, Object o) throws Throwable {

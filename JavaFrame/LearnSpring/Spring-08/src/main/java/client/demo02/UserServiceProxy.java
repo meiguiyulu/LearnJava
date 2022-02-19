@@ -11,6 +11,7 @@ public class UserServiceProxy implements UserService {
     public void setUserService(UserServiceImpl userService) {
         this.userService = userService;
     }
+
     @Override
     public void add() {
         log("add");
@@ -35,7 +36,7 @@ public class UserServiceProxy implements UserService {
         System.out.println("查询了一个用户！");
     }
 
-    public void log(String message){
+    public void log(String message) {
         System.out.println("使用了" + message + "方法!");
     }
 

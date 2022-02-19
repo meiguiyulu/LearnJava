@@ -6,23 +6,22 @@
 </head>
 <body>
 <div id="app">
-    <test1 v-for="item in items" v-bind:yun="item"></test1>
+    <button v-on:click="sayHello">Click me!</button>
 </div>
 
 <!--1、导入vue.js-->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script>
-
-    // 定义一个Vue组件component
-    Vue.component("test1", {
-        props: ["yun"],
-        template: '<li>{{yun}}</li>',
-    });
-
     let vm = new Vue({
         el: "#app",
         data: {
-            items: ["Java", "Python", "C#"],
+            message: "小杰，你好呀"
+        },
+        methods: {
+            // Vue中的事件必须写在methods中
+            sayHello: function () {
+                alert(this.message);
+            }
         }
     });
 </script>
