@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <h2>{{ url }}</h2>
+    <h2 v-html="url"></h2>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+    let app = new Vue({
+        el: "#app",
+        data: {
+            counter: 0,
+            message: ' Hello Vue,js',
+            firstName: 'kobe',
+            lastName: 'bryant',
+            url: '<a href="Https://www.baidu.com">百度一下</a>',
+        },
+    })
+</script>
+
+</body>
+</html>
