@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .toRed{
+        color: red;
+    }
+</style>
+<div id="app">
+    <ul>
+        <li v-for="(item, index) in movies" v-on:click="activeIndex=index"
+        :class="{toRed: activeIndex==index}">{{index}}--{{item}}</li>
+    </ul>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+    let app = new Vue({
+        el: "#app",
+        data: {
+            message: '你好呀',
+            movies: ['进击的巨人', '鬼灭之刃', '命运石之门', '白夜追凶'],
+            activeIndex: -1
+        },
+/*        methods: {
+            click: function (index) {
+                this.index = index;
+            },
+            changeColor: function () {
+                return {toRed: this.isRed};
+            }
+        }*/
+    })
+</script>
+</body>
+</html>

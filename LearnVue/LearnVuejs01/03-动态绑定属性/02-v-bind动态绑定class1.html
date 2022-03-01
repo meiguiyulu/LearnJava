@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .active {
+        color: rebeccapurple;
+    }
+    .line {
+        font-size: 26pt;
+    }
+</style>
+<div id="app">
+    <p v-bind:class="getClasses()">{{message}}</p>
+    <button v-on:click="btnClick">按钮</button>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+    let app = new Vue({
+        el: "#app",
+        data: {
+            message: '你好呀',
+            isActivate: true,
+            isLine: true,
+        },
+        methods: {
+            btnClick: function () {
+                this.isActivate = !this.isActivate;
+            },
+            getClasses: function () {
+                return {active: this.isActivate, line: this.isLine}
+            }
+        }
+    })
+</script>
+</body>
+</html>
