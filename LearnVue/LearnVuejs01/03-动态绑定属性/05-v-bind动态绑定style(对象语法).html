@@ -6,7 +6,15 @@
 </head>
 <body>
 <div id="app">
-    <h2 :style="{color: red, fontSize: 15pt}">{{message}}</h2>
+<!--    <h2 :style="{属性名:属性值}">{{message}}</h2>-->
+
+    <!--'0px'必须加上单引号 否则是当作变量去解析
+    驼峰标识的时候 fontSize 不需要加单引号
+    -标识的时候 'font-size'也需要加单引号
+    -->
+    <h2 :style="{fontSize: '50px'}">{{message}}</h2>
+    <h2 :style="{'font-size': '50px'}">{{message}}</h2>
+    <h2 :style="{fontSize: size}">{{message}}</h2>
 </div>
 <script src="../js/vue.js"></script>
 <script>
@@ -14,17 +22,8 @@
         el: "#app",
         data: {
             message: '你好呀',
-            movies: ['进击的巨人', '鬼灭之刃', '命运石之门', '白夜追凶'],
-            activeIndex: -1
+            size: '100px'
         },
-        /*        methods: {
-                    click: function (index) {
-                        this.index = index;
-                    },
-                    changeColor: function () {
-                        return {toRed: this.isRed};
-                    }
-                }*/
     })
 </script>
 </body>
