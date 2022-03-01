@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!-- .stop 修饰符的使用-->
+    <div @click="divClick">
+        点点点
+        <button @click.stop="btnClick">按钮</button>
+    </div>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+    const vue = new Vue({
+        el: '#app',
+        data: {
+            counter: 0,
+        },
+        methods: {
+            btnClick() {
+                console.log("btnClick");
+            },
+            divClick() {
+                console.log("divClick");
+            }
+        }
+    })
+</script>
+</body>
+</html>
