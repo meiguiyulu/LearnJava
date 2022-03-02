@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <ul>
+        <!--1. 遍历过程中，不需要使用下标值-->
+        <li v-for="item in names">{{item}}</li>
+        <!--2. 遍历过程中获取下标值-->
+        <li v-for="(item, index) in names">{{index}}-{{item}}</li>
+
+    </ul>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+    const vue = new Vue({
+        el: '#app',
+        data: {
+            names: ['进击的巨人', '火影', '海贼王', '水浒'],
+        }
+    })
+</script>
+</body>
+</html>

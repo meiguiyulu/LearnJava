@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <ul>
+        <li v-for="item in letters" :key="item">{{item}}</li>
+        <button @click="btnClick">按钮</button>
+    </ul>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+    const vue = new Vue({
+        el: '#app',
+        data: {
+            letters: ['a', 'b', 'c', 'd'],
+            counter: 0,
+        },
+        methods: {
+            btnClick() {
+                /*1 push方法*/
+                // this.letters.push(this.counter++);
+
+                /*2 通过索引值修改数组中的元素*/
+                this.letters[0] = 'aaa';
+            }
+        }
+    })
+</script>
+
+</body>
+</html>
