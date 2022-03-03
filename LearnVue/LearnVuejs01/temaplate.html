@@ -1,0 +1,13 @@
+<div id="app">
+    <input type="text" v-model="message">
+    {{message}}
+</div>
+<script src="../js/vue.js"></script>
+<script>
+    const vue = new Vue({
+        el: '#app',
+        data: {
+            message: '你好啊',
+        }
+    })
+</script>
