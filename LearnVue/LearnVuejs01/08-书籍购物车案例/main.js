@@ -39,7 +39,7 @@ const vue = new Vue({
             for (let i=0;i<this.books.length;i++) {
                 ans += this.books[i].price * this.books[i].count;
             }
-            return ans.toFixed(2);
+            return ans;
         }
     },
     methods: {

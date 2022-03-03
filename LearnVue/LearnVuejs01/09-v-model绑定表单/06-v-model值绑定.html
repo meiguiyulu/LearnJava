@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <label v-for="item in originHobbies">
+        <input type="checkbox" :value="item" v-model="fruits">{{item}}
+    </label>
+    <h2>您选择的是: {{fruits}}</h2>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+    const vue = new Vue({
+        el: '#app',
+        data: {
+            message: '你好啊',
+            fruit: '',
+            fruits: [],
+            originHobbies: ['篮球', '足球', '乒乓球', '羽毛球', '台球', '悠悠球']
+        },
+    })
+</script>
+
+</body>
+</html>
