@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--父组件模板-->
+<div id="app">
+    <!--这里不支持驼峰标识-->
+    <vpn @add-counter="addCounter"
+         @decrement-counter="decrementCounter"
+         :child-counter="counter"></vpn>
+</div>
+<!--子组件模板-->
+<template id="cpn">
+    <div>
+        <h2>{{childCounter}}</h2>
+        <button @click="increment()">+</button>
+        <button @click="decrement()">-</button>
+    </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script>
+    /*1. 子组件*/
+    const vpn = {
+        template: '#cpn',
+        props: {
+            childCounter: {
+                required: true,
+            }
+        },
+        methods: {
+            increment() {
+                this.$emit('add-counter');
+            },
+            decrement() {
+                this.$emit('decrement-counter')
+            }
+        }
+    }
+
+    /*2. 父组件*/
+    const vue = new Vue({
+        el: '#app',
+        data: {
+            message: '你好啊',
+            counter: 0,
+        },
+        components: {
+            vpn
+        },
+        methods: {
+            addCounter() {
+                this.counter++;
+            },
+            decrementCounter() {
+                this.counter--;
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

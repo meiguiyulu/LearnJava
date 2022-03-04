@@ -33,6 +33,14 @@
                     cmessage: {
                         type: String,   /*类型限制*/
                         default: '',  /*默认值*/
+                        required: true, /*true表示使用cmessage这个属性的时候必须要传值*/
+                    },
+                    cmovies: {
+                        type: Array,
+                        /*类型是数组或者对象的时候，默认值必须要是一个函数*/
+                        default() {
+                            return [];
+                        }
                     }
                 }
             }
