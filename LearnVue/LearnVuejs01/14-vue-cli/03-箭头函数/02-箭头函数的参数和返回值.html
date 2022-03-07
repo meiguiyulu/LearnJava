@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 1. 参数问题
+    // 1.1 放入两个参数
+    const sum = (num1, num2) => {
+        return num1 + num2;
+    }
+
+    // 1.2 放入一个参数的时候 ()可以省略
+    const power = num => {
+        return num * num;
+    }
+
+    // 2.返回值问题
+    // 2.1 函数代码块中有多行代码时  正常写
+    const test = () => {
+        /*1. 打印Hello World*/
+        console.log('Hello World');
+        /*2. 打印Hello Vuejs*/
+        console.log('Hello Vue.js');
+    }
+
+    // 2.2 函数代码块中只有一行代码
+    /*
+    * const mul = (num1, num2) => {
+        return num1 * num2;
+    }
+    * 等价于下面
+    * */
+    const mul = (num1, num2) => num1 * num2;
+
+    const demo = () => console.log('hello world');
+</script>
+</body>
+</html>

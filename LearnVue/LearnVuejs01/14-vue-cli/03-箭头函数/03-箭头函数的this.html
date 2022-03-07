@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*什么时候使用*/
+    const onj = {
+        aaa() {
+            setTimeout(function () {
+                console.log(this); // windows
+            })
+            /* 箭头函数的this引用的是最近作用域中的this
+            *
+            * 箭头函数中的this是如何查找的？向外层作用域一层层查找this，直到有this的定义。
+            *
+            * */
+            setTimeout(() => {
+                console.log(this); // Obj对象
+            })
+        }
+    }
+    onj.aaa();
+</script>
+</body>
+</html>
