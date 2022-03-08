@@ -81,7 +81,6 @@
       </li>
     </ul>
   </div>-->
-
   <div>
     <h2>Hello World</h2>
     <router-link to="/HelloWorld/news">新闻</router-link>
@@ -95,8 +94,24 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      path: '/HelloWorld/news',
     }
+  },
+  created() {
+    console.log('Hello World created');
+  },
+  destroyed() {
+    console.log('Hello World destroyed');
+  },
+  activated() {
+    console.log('Hello World activated');
+    this.$router.push(this.path);
+  },
+  beforeRouteLeave(to, from, next) {
+    console.log(this.$route.path);
+    this.path = this.$route.path;
+    next();
   }
 }
 </script>
