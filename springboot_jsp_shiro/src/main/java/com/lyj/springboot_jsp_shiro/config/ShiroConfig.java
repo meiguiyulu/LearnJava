@@ -1,6 +1,8 @@
 package com.lyj.springboot_jsp_shiro.config;
 
+import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
 import com.lyj.springboot_jsp_shiro.shiro.CustomerRealm;
+import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.realm.Realm;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
@@ -24,17 +26,14 @@ public class ShiroConfig {
         // 给filter设置安全管理器
         shiroFilterFactoryBean.setSecurityManager(defaultWebSecurityManager);
 
-        // 配置系统的受限资源
-        // 配置系统的公共资源
         Map<String, String> map = new HashMap<>();
-        map.put("/index", "authc");
+        map.put("/user/login", "anon"); // 配置系统的公共资源
+        map.put("/user/register", "anon"); // 配置系统的公共资源
+        map.put("/**", "authc"); // 配置系统的受限资源
 
         // 设置默认的认证界面
-        shiroFilterFactoryBean.setLoginUrl("/login"); //authc 请求这个资源需要认证和授权
-
+        shiroFilterFactoryBean.setLoginUrl("/user/login"); //authc 请求这个资源需要认证和授权
         shiroFilterFactoryBean.setFilterChainDefinitionMap(map);
-
-
         return shiroFilterFactoryBean;
     }
 
@@ -52,7 +51,21 @@ public class ShiroConfig {
     @Bean
     public Realm getRealm() {
         CustomerRealm customerRealm = new CustomerRealm();
+        //设置hashed凭证匹配器
+        HashedCredentialsMatcher credentialsMatcher = new HashedCredentialsMatcher();
+
+        //设置md5加密
+        credentialsMatcher.setHashAlgorithmName("md5");
+
+        //设置散列次数
+        credentialsMatcher.setHashIterations(1024);
+        customerRealm.setCredentialsMatcher(credentialsMatcher);
         return customerRealm;
+    }
+
+    @Bean
+    public ShiroDialect shiroDialect() {
+        return new ShiroDialect();
     }
 
 }
