@@ -1,12 +1,15 @@
 package com.lyj.springboot_jsp_shiro.service;
 
 import com.lyj.springboot_jsp_shiro.dao.UserDAO;
+import com.lyj.springboot_jsp_shiro.entity.Perms;
 import com.lyj.springboot_jsp_shiro.entity.User;
 import com.lyj.springboot_jsp_shiro.utils.SaltUtils;
 import org.apache.shiro.crypto.hash.Md5Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @Service
 @Transactional
@@ -34,4 +37,15 @@ public class UserServiceImpl implements UserService{
         User user = userDAO.findByUserName(username);
         return user;
     }
+
+    @Override
+    public List<Perms> findPermsByRoleId(Integer id) {
+        return userDAO.findPermsByRoleId(id);
+    }
+
+    @Override
+    public User findRolesByUserName(String username) {
+        return userDAO.findRolesByUserName(username);
+    }
+
 }

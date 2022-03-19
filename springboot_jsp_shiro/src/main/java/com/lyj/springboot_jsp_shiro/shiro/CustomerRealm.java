@@ -1,5 +1,6 @@
 package com.lyj.springboot_jsp_shiro.shiro;
 
+import com.lyj.springboot_jsp_shiro.entity.Perms;
 import com.lyj.springboot_jsp_shiro.entity.User;
 import com.lyj.springboot_jsp_shiro.service.UserService;
 import org.apache.shiro.authc.AuthenticationException;
@@ -11,7 +12,10 @@ import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
+import org.apache.shiro.util.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
 
 public class CustomerRealm extends AuthorizingRealm {
 
@@ -23,10 +27,24 @@ public class CustomerRealm extends AuthorizingRealm {
         System.out.println("=================授权================");
         // 获取身份信息
         String principal = (String) principalCollection.getPrimaryPrincipal();
+
+        User user = userService.findRolesByUserName(principal);
+
         // 根据主身份信息获取角色 和 权限信息
-        if ("lyj".equals(principal)) {
+
+        if (!CollectionUtils.isEmpty(user.getRoles())) {
             SimpleAuthorizationInfo simpleAuthorizationInfo = new SimpleAuthorizationInfo();
-            simpleAuthorizationInfo.addRole("admin");
+            user.getRoles().forEach(role -> {
+                simpleAuthorizationInfo.addRole(role.getName()); // 添加角色信息
+                // 权限信息
+                List<Perms> perms = userService.findPermsByRoleId(role.getId());
+                System.out.println("perms: " + perms);
+                if (!CollectionUtils.isEmpty(perms) && perms.get(0)!=null) {
+                    perms.forEach(perms1 -> {
+                        simpleAuthorizationInfo.addStringPermission(perms1.getName());
+                    });
+                }
+            });
             return simpleAuthorizationInfo;
         }
         return null;
