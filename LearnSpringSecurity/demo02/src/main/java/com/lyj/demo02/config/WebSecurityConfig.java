@@ -3,14 +3,54 @@ package com.lyj.demo02.config;
 import com.lyj.demo02.handler.LoginFailureHandler;
 import com.lyj.demo02.handler.LoginSuccessHandler;
 import com.lyj.demo02.handler.MyLogoutSuccessHandler;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.security.web.util.matcher.OrRequestMatcher;
 
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Bean
+    public UserDetailsService userDetailsService() {
+        InMemoryUserDetailsManager userDetails = new InMemoryUserDetailsManager();
+        userDetails.createUser(User.withUsername("aaa").password("{noop}123").roles("admin").build()); // {noop}表示明文
+        return userDetails;
+    }
+
+    /*springboot对security的默认配置中，会在工厂中默认创建AuthenticationManager*/
+/*    @Autowired
+    public void initialize(AuthenticationManagerBuilder builder) throws Exception {
+        System.out.println("SpringBoot 默认配置: " + builder);
+
+        builder.userDetailsService(userDetails);
+    }*/
+
+    @Override
+    public void configure(AuthenticationManagerBuilder builder) throws Exception {
+        System.out.println("自定义AuthenticationManager: " + builder);
+        builder.userDetailsService(userDetailsService());
+    }
+
+    /**
+     * 作用：将自定义的AuthenticationManager暴露在工厂中，这样就可以在代码的任何地方进行注入
+     * @return
+     * @throws Exception
+     */
+    @Override
+    @Bean
+    public AuthenticationManager authenticationManagerBean() throws Exception {
+        return super.authenticationManagerBean();
+    }
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
