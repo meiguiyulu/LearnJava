@@ -2,9 +2,12 @@ package com.lyj.demo02.config;
 
 import com.lyj.demo02.handler.LoginFailureHandler;
 import com.lyj.demo02.handler.LoginSuccessHandler;
+import com.lyj.demo02.handler.MyLogoutSuccessHandler;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+import org.springframework.security.web.util.matcher.OrRequestMatcher;
 
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -36,6 +39,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 // .failureForwardUrl("/login.html") // 认证失败以后的跳转路径 使用的是forward跳转，跳转以后地址不变
                 // .failureUrl("/login.html") //认证失败跳转  redirect的重定向跳转 地址会变
                 .failureHandler(new LoginFailureHandler()) /*前后端分录自定义登陆失败处理方案*/
+                .and()
+                .logout()
+/*                .logoutUrl("/logout") // 指定注销登录的url*/
+                .logoutRequestMatcher(new OrRequestMatcher(
+                        new AntPathRequestMatcher("/logout1", "POST"),
+                        new AntPathRequestMatcher("/logout", "GET")
+                ))
+                .invalidateHttpSession(true) // 默认 会话失效
+                .clearAuthentication(true) // 默认 清除认证标记
+//                .logoutSuccessUrl("/login.html") // 注销登录成功之后跳转画面
+                .logoutSuccessHandler(new MyLogoutSuccessHandler()) /*前后端分离 注销登录成功的处理*/
                 .and()
                 .csrf().disable(); // 禁止csrf 跨站请求保护
     }
