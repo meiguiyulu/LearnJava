@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
@@ -14,6 +15,13 @@
 </form>
 <div th:text="${SPRING_SECURITY_LAST_EXCEPTION}">
 </div>
+<hr>
+<!--<ul>
+    <li sec:authentication="principal.username"></li>
+    <li sec:authentication="principal.authorities"></li>
+    <li sec:authentication="principal.accountNonExpired"></li>
+    <li sec:authentication="principal.accountNonLocked"></li>
+</ul>-->
 
 </body>
 </html>
