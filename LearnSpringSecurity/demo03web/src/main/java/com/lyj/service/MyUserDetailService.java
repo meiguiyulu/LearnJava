@@ -5,6 +5,7 @@ import com.lyj.entity.Role;
 import com.lyj.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsPasswordService;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class MyUserDetailService implements UserDetailsService {
+public class MyUserDetailService implements UserDetailsService, UserDetailsPasswordService {
 
     @Autowired
     private UserDao userDao;
@@ -27,6 +28,16 @@ public class MyUserDetailService implements UserDetailsService {
         // 2. 权限查询
         List<Role> roles = userDao.getRolesByUid(user.getId());
         user.setRoles(roles);
+        return user;
+    }
+
+
+    @Override
+    public UserDetails updatePassword(UserDetails user, String newPassword) {
+        Integer i = userDao.updatePassword(user.getUsername(), newPassword);
+        if (i == 1) {
+            ((User) user).setPassword(newPassword);
+        }
         return user;
     }
 }

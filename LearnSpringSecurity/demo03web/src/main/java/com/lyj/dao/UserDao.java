@@ -14,4 +14,7 @@ public interface UserDao {
 
     // 根据用户id查询角色信息
     List<Role> getRolesByUid(Integer uid);
+
+    // 修改用户密码
+    Integer updatePassword(String username, String newPassword);
 }
