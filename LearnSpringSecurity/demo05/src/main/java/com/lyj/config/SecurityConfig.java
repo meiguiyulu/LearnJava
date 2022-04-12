@@ -23,19 +23,21 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return manager;
     }
 
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.userDetailsService(userDetailsService());
+    }
+
     @Bean
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
 
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(userDetailsService());
-    }
-
-/*    @Autowired
-    private KaptchaFilter kaptchaFilter;*/
+/*
+    @Autowired
+    private KaptchaFilter kaptchaFilter;
+    */
 
     @Bean
     public KaptchaFilter kaptchaFilter() throws Exception {

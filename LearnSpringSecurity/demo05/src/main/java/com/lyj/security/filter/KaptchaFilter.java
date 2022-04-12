@@ -29,15 +29,16 @@ public class KaptchaFilter extends UsernamePasswordAuthenticationFilter {
         // 2. 从session中获取验证码
         String codeFromSession = (String) request.getSession().getAttribute("kaptcha");
 
-        if (codeFromSession != null && codeFromSession.equals(codeFormRequest)) {
+        if (codeFromSession != null && codeFromSession.equalsIgnoreCase(codeFormRequest)) {
             return super.attemptAuthentication(request, response);
         }
         try {
+            System.out.println("*9***************");
             throw new KaptchaNotMatchException("验证码不匹配");
         } catch (KaptchaNotMatchException e) {
             e.printStackTrace();
         }
-        return null;
+        return super.attemptAuthentication(request, response);
     }
 
     /**
