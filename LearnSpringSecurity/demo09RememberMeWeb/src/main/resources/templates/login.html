@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+
+<h1>用户登录</h1>
+<form method="post" th:action="@{/doLogin}">
+    用户名: <input name="uname" type="text"> <br>
+    密码: <input name="pwd" type="password"> <br>
+    <!--  value的可选值可以为：true或者yes或者on或者1  -->
+    记住我:<input name="remember-me" type="checkbox" value="1"> <br>
+    <button>登录</button>
+</form>
+<hr>
+<div th:text="${session.SPRING_SECURITY_LAST_EXCEPTION}"></div>
+</body>
+</html>
