@@ -14,6 +14,7 @@ import java.util.Date;
 public class MyFrame extends JFrame {
 
     JLabel timeLabel = new JLabel("点击按钮，显示时间");
+    JTextField textField = new JTextField(20);
 
     public MyFrame(String title) {
         super(title);
@@ -32,6 +33,14 @@ public class MyFrame extends JFrame {
 
         JButton button = new JButton("测试");
         rootPanel.add(button);
+        /* JLabel中增加HTML文本 */
+        JLabel htmlLabel = new JLabel("<html>bold <br> plain</html>");
+        rootPanel.add(htmlLabel);
+
+        /* 文本框 */
+        textField.setText("你好呀");
+        rootPanel.add(textField);
+
         /* 添加事件处理 */
         ActionListener actionListener = new MyActionListener();
         button.addActionListener(actionListener);
@@ -46,6 +55,8 @@ public class MyFrame extends JFrame {
             System.out.println(format);
 
             timeLabel.setText(format);
+
+            System.out.println(textField.getText());
         }
     }
 
