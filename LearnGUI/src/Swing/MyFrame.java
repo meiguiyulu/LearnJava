@@ -15,6 +15,8 @@ public class MyFrame extends JFrame {
 
     JLabel timeLabel = new JLabel("点击按钮，显示时间");
     JTextField textField = new JTextField(20);
+    JCheckBox checkBox = new JCheckBox("同意");
+    JButton button = new JButton("测试");
 
     public MyFrame(String title) {
         super(title);
@@ -31,7 +33,6 @@ public class MyFrame extends JFrame {
         rootPanel.add(label);
         rootPanel.add(timeLabel);
 
-        JButton button = new JButton("测试");
         rootPanel.add(button);
         /* JLabel中增加HTML文本 */
         JLabel htmlLabel = new JLabel("<html>bold <br> plain</html>");
@@ -40,6 +41,15 @@ public class MyFrame extends JFrame {
         /* 文本框 */
         textField.setText("你好呀");
         rootPanel.add(textField);
+
+        checkBox.addActionListener(e -> {
+            if (checkBox.isSelected())
+                button.setEnabled(true);
+            else button.setEnabled(false);
+        });
+
+        /* 复选框 */
+        rootPanel.add(checkBox);
 
         /* 添加事件处理 */
         ActionListener actionListener = new MyActionListener();
